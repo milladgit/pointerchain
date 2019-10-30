@@ -1,6 +1,6 @@
 
 import os, sys, glob, re
-import accunroll
+import pcunroll
 import string
 
 
@@ -263,7 +263,7 @@ def convert_forward(filename):
 	tmp_filename = generate_tmp_name(filename)
 	save_in_file(tmp_filename, lines)
 
-	accunroll.unroll(tmp_filename, tmp_filename)
+	pcunroll.unroll(tmp_filename, tmp_filename)
 
 	orig_filename = generate_original_name(filename)
 	copy_files(filename, orig_filename)
